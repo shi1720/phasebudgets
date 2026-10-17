@@ -1,0 +1,13 @@
+test_boundary_law (test_research.ResearchTests.test_boundary_law) ... ok
+test_closed_formula_against_continuum_bracket (test_research.ResearchTests.test_closed_formula_against_continuum_bracket) ... ok
+test_exact_low_order_moments (test_research.ResearchTests.test_exact_low_order_moments) ... ok
+test_extreme_small_height (test_research.ResearchTests.test_extreme_small_height) ... ok
+test_input_contract (test_research.ResearchTests.test_input_contract) ... ok
+test_noisy_formula_against_independent_lp (test_research.ResearchTests.test_noisy_formula_against_independent_lp) ... ok
+test_off_centre_certificates_and_precision (test_research.ResearchTests.test_off_centre_certificates_and_precision) ... ok
+test_scaling_and_order (test_research.ResearchTests.test_scaling_and_order) ... ok
+
+----------------------------------------------------------------------
+Ran 8 tests in 0.725s
+
+OK

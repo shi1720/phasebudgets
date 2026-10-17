@@ -1,0 +1,3 @@
+The software and its technical documentation are distributed under the MIT license.
+
+The research manuscript Sharp Phase Budgets for Moment-Calibrated Scalar Wiener–Hopf Factors is copyright (c) 2026 Shivam Gupta. All rights reserved. Its inclusion in this repository makes it publicly readable and downloadable; it is not covered by the software's MIT license.

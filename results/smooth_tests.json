@@ -1,0 +1,130 @@
+[
+  {
+    "r": 1,
+    "kappa": 8,
+    "y": 0.01,
+    "attainment": 0.47193963546334455,
+    "moment_residual": 7.28583859910259e-17,
+    "coefficient_bound": 0.3913087543510173
+  },
+  {
+    "r": 1,
+    "kappa": 8,
+    "y": 0.1,
+    "attainment": 0.5431333307991105,
+    "moment_residual": 7.28583859910259e-17,
+    "coefficient_bound": 0.3913087543510173
+  },
+  {
+    "r": 1,
+    "kappa": 32,
+    "y": 0.01,
+    "attainment": 0.7952086421951035,
+    "moment_residual": 7.635401744827728e-17,
+    "coefficient_bound": 0.14136489925149198
+  },
+  {
+    "r": 1,
+    "kappa": 32,
+    "y": 0.1,
+    "attainment": 0.8097821767929029,
+    "moment_residual": 7.635401744827728e-17,
+    "coefficient_bound": 0.14136489925149198
+  },
+  {
+    "r": 1,
+    "kappa": 128,
+    "y": 0.01,
+    "attainment": 0.935276252495694,
+    "moment_residual": 4.72525799955284e-17,
+    "coefficient_bound": 0.04834592876475576
+  },
+  {
+    "r": 1,
+    "kappa": 128,
+    "y": 0.1,
+    "attainment": 0.931741481883181,
+    "moment_residual": 4.72525799955284e-17,
+    "coefficient_bound": 0.04834592876475576
+  },
+  {
+    "r": 1,
+    "kappa": 512,
+    "y": 0.01,
+    "attainment": 0.9797643228766181,
+    "moment_residual": 1.8299319930922905e-16,
+    "coefficient_bound": 0.01574063913311686
+  },
+  {
+    "r": 1,
+    "kappa": 512,
+    "y": 0.1,
+    "attainment": 0.9776192340595056,
+    "moment_residual": 1.8299319930922905e-16,
+    "coefficient_bound": 0.01574063913311686
+  },
+  {
+    "r": 3,
+    "kappa": 8,
+    "y": 0.01,
+    "attainment": 0.18216045401039152,
+    "moment_residual": 2.6454533008646308e-17,
+    "coefficient_bound": 2.775198987231573
+  },
+  {
+    "r": 3,
+    "kappa": 8,
+    "y": 0.1,
+    "attainment": 0.18812192005603978,
+    "moment_residual": 2.6454533008646308e-17,
+    "coefficient_bound": 2.775198987231573
+  },
+  {
+    "r": 3,
+    "kappa": 32,
+    "y": 0.01,
+    "attainment": 0.5001889457401225,
+    "moment_residual": 7.265308358170801e-17,
+    "coefficient_bound": 0.8382957995114748
+  },
+  {
+    "r": 3,
+    "kappa": 32,
+    "y": 0.1,
+    "attainment": 0.4929912855739604,
+    "moment_residual": 7.265308358170801e-17,
+    "coefficient_bound": 0.8382957995114748
+  },
+  {
+    "r": 3,
+    "kappa": 128,
+    "y": 0.01,
+    "attainment": 0.7725654377823937,
+    "moment_residual": 3.7581871094681753e-16,
+    "coefficient_bound": 0.26776383524339553
+  },
+  {
+    "r": 3,
+    "kappa": 128,
+    "y": 0.1,
+    "attainment": 0.765785926717354,
+    "moment_residual": 3.7581871094681753e-16,
+    "coefficient_bound": 0.26776383524339553
+  },
+  {
+    "r": 3,
+    "kappa": 512,
+    "y": 0.01,
+    "attainment": 0.9144858266655123,
+    "moment_residual": 8.382196977764447e-17,
+    "coefficient_bound": 0.08709438997582848
+  },
+  {
+    "r": 3,
+    "kappa": 512,
+    "y": 0.1,
+    "attainment": 0.9115755100689188,
+    "moment_residual": 8.382196977764447e-17,
+    "coefficient_bound": 0.08709438997582848
+  }
+]

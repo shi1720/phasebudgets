@@ -1,0 +1,15 @@
+{
+  "ball_formula_checks": 312,
+  "ball_moment_checks": 4056,
+  "independent_quadratures": 12,
+  "continuum_certificates": 18,
+  "convergence_certificates": 10,
+  "smooth_cases": 16,
+  "max_continuum_gap": 0.00013287199666534022,
+  "max_smooth_moment_residual": 3.7581871094681753e-16,
+  "seconds": 3.9080508750048466,
+  "python": "3.12.14",
+  "numpy": "2.5.4",
+  "scipy": "1.18.1",
+  "platform": "macOS-27.0.1-arm64-arm-64bit"
+}

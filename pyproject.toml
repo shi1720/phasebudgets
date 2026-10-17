@@ -1,0 +1,14 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+[project]
+name = "phasebudgets"
+version = "0.1.0"
+description = "Sharp logarithmic factor uncertainty with calibrated moments"
+requires-python = ">=3.11"
+dependencies = ["numpy", "scipy", "matplotlib", "mpmath", "sympy", "python-flint"]
+[tool.setuptools]
+py-modules = ["phasebudgets", "certifier"]
+package-dir = {"" = "src"}
+[project.scripts]
+phasebudgets = "phasebudgets:main"

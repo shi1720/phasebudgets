@@ -1,0 +1,10 @@
+cff-version: 1.2.0
+message: "Please cite the associated research manuscript when using this software."
+title: "PhaseBudgets: Moment-Calibrated Scalar Wiener-Hopf Factor Uncertainty"
+version: 0.1.0
+date-released: 2026-10-17
+authors:
+  - family-names: Gupta
+    given-names: Shivam
+repository-code: "https://github.com/shi1720/phasebudgets"
+license: MIT
