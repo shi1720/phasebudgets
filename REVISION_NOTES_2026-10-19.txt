@@ -1,0 +1,8 @@
+PhaseBudgets journal revision, 19 October 2026
+
+1. Original sharp laws, proofs and scientific result data retained. Nonnegative tolerance assumption made explicit in the inexact-moment theorem.
+2. Continuum certifier validates the supplied moment degree, positive height, nonzero direction, partition geometry, height count and dual polynomial degree.
+3. Inexact-first-moment scalar evaluation uses logarithmic forms near zero and log1p of a nonnegative excess at large heights.
+4. Twelve test methods cover the original eight and four input/extreme-height regressions. Full experiment and symbolic reproduction logs retained.
+5. Springer layout with four vector figures, two tables, ORCID and complete declarations. Existing ICERM participation addendum and closed ETNA submission are disclosed in the cover letter.
+Original public commit: 09ab310f3026880332a5290b8eb1af1a5e184d0a

@@ -47,7 +47,7 @@ tectonic main.tex
 - `src/certifier.py`: separate exact moment repair, rational polynomial root isolation, and Arb antiderivative enclosures. LP convergence is not assumed for certificate soundness.
 - `run_experiments.py`: 312 ball formula comparisons, 4,056 ball moment checks, 12 independent 70-digit quadratures, 18 off-centre/centre certificates, 10 refinement certificates, and 16 smooth examples.
 - `verify_symbolics.py`: 14 exact symbolic polynomial divisions and 15 independent off-axis transform quadratures.
-- `tests/test_research.py`: eight test groups, including a separately assembled inexact-moment LP and higher-precision replay.
+- `tests/test_research.py`: twelve test methods, including a separately assembled inexact-moment LP, higher-precision replay, malformed-proposal rejection and extreme-height formula checks.
 - `results/`: raw proposals, rational root boxes, high-precision interval records, environment manifest, and test log.
 - `manuscript/`: complete LaTeX sources, four figures, and two generated tables.
 

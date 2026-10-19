@@ -46,9 +46,25 @@ def kernel_polynomial_integral(poly,x,y,A,B,left,right):
 
 
 def certify(proposal):
-    m=proposal['m']; x=R(proposal['x']); y=R(proposal['y'])
-    d0,d1=map(R,proposal['direction']); A=d0*y+d1*x; B=-d1
+    m=proposal['m']
+    if type(m) is not int or m<0:
+        raise ValueError('moment degree must be a nonnegative integer')
+    x=R(proposal['x']); y=R(proposal['y'])
+    if y<=0:
+        raise ValueError('evaluation height must be positive')
+    if len(proposal['direction'])!=2:
+        raise ValueError('direction must have two rational components')
+    d0,d1=map(R,proposal['direction'])
+    if d0==0 and d1==0:
+        raise ValueError('direction must be nonzero')
+    A=d0*y+d1*x; B=-d1
     edges=list(map(R,proposal['edges'])); values=list(map(R,proposal['values']))
+    if (len(edges)<2 or len(values)!=len(edges)-1 or edges[0]!=-1 or
+        edges[-1]!=1 or any(a>=b for a,b in zip(edges[:-1],edges[1:]))):
+        raise ValueError('cells must form a strictly increasing partition of [-1,1] with one height per cell')
+    dual=list(map(R,proposal['lambda_power']))
+    if len(dual)>m+1 and any(c!=0 for c in dual[m+1:]):
+        raise ValueError('dual polynomial exceeds the calibrated moment degree')
     # Clip decimal values to the declared box before exact repair.
     values=[max(-1,min(1,v)) for v in values]
     legs=[S.legendre(j,T) for j in range(m+1)]
@@ -69,7 +85,7 @@ def certify(proposal):
     re=repaired_component(y,0); im=repaired_component(x,-1)
     low=ball(d0)*re+ball(d1)*im
     # Dual candidate in power basis, treated as exact decimal rationals.
-    p=sum(R(c)*T**j for j,c in enumerate(proposal['lambda_power']))
+    p=sum(c*T**j for j,c in enumerate(dual))
     numerator=S.Poly(A+B*T-((T-x)**2+y*y)*p,T)
     intervals=numerator.intervals(eps=S.Rational(1,10**25),inf=-1,sup=1)
     boxes=[]

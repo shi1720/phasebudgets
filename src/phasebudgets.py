@@ -50,7 +50,14 @@ def noisy_first_moment_budget(y: float, delta: float, epsilon: float = 1) -> flo
     if y <= 0 or epsilon <= 0 or delta < 0:
         raise ValueError("y,epsilon>0, delta>=0 required")
     a2 = (1 + min(delta/epsilon, 1.0))/2
-    return epsilon/(2*math.pi)*math.log((y*y+a2)**2/(y*y*(1+y*y)))
+    if y<1:
+        value=2*math.log(y*y+a2)-2*math.log(y)-math.log1p(y*y)
+    else:
+        # Positive excess over one avoids cancellation in the far field.
+        q=(1/y)**2
+        excess=((2*a2-1)*q+a2*a2*q*q)/(1+q)
+        value=math.log1p(excess)
+    return epsilon/(2*math.pi)*value
 
 
 def extremizer(r: int, kind: str = 'phase'):
